@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A premium gym-inspired birthday surprise for Sreehari.">
+  <title>Happy Birthday Sreehari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="smoke smoke-one" aria-hidden="true"></div>
+  <div class="smoke smoke-two" aria-hidden="true"></div>
+  <canvas id="particleCanvas" class="effect-canvas" aria-hidden="true"></canvas>
+  <canvas id="burstCanvas" class="effect-canvas" aria-hidden="true"></canvas>
+
+  <main class="site-shell">
+    <section id="loader" class="screen loader-screen is-active" aria-live="polite">
+      <div class="loader-mark">
+        <span class="loader-ring"></span>
+        <span class="loader-core"></span>
+      </div>
+      <p>Initializing Beast Mode...</p>
+    </section>
+
+    <section id="hero" class="screen hero-screen" aria-labelledby="heroTitle">
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="kicker">Elite Birthday Facility</p>
+        <h1 id="heroTitle">🎉 Happy Birthday Sreehari 🎉</h1>
+        <p class="tagline">"Legends aren't born. They're built."</p>
+      </div>
+
+      <div class="training-platform" aria-label="Interactive barbell birthday challenge">
+        <div class="barbell" id="barbell">
+          <div class="bar-shadow" aria-hidden="true"></div>
+          <div class="bar"></div>
+          <div class="sleeve sleeve-left"></div>
+          <div class="sleeve sleeve-right"></div>
+          <div class="plate-stack left-stack" aria-hidden="true">
+            <span class="plate plate-large"></span>
+            <span class="plate plate-mid"></span>
+            <span class="plate plate-small"></span>
+          </div>
+          <div class="plate-stack right-stack" aria-hidden="true">
+            <span class="plate plate-large"></span>
+            <span class="plate plate-mid"></span>
+            <span class="plate plate-small"></span>
+          </div>
+          <div class="collar collar-left"></div>
+          <div class="collar collar-right"></div>
+        </div>
+        <button id="rackButton" class="action-button" type="button">Rack the Weight</button>
+      </div>
+    </section>
+
+    <section id="message" class="screen message-screen" aria-labelledby="messageTitle">
+      <div class="panel-line" aria-hidden="true"></div>
+      <h2 id="messageTitle" class="sr-only">Birthday Message</h2>
+      <p id="typewriterText" class="typewriter" aria-live="polite"></p>
+    </section>
+
+    <section id="challenge" class="screen challenge-screen" aria-labelledby="challengeTitle">
+      <div class="vault-zone">
+        <div id="vaultDoor" class="vault-door" aria-hidden="true">
+          <div class="vault-bolts"></div>
+          <div class="vault-wheel">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="vault-slit"></div>
+        </div>
+        <div class="vault-light" aria-hidden="true"></div>
+      </div>
+      <h2 id="challengeTitle">Only those worthy may unlock today's reward.</h2>
+      <button id="acceptButton" class="action-button" type="button">Accept Challenge</button>
+    </section>
+
+    <section id="riddle" class="screen riddle-screen" aria-labelledby="riddleTitle">
+      <article class="riddle-card">
+        <p class="kicker">Access Trial</p>
+        <h2 id="riddleTitle">Decode the Discipline Lock</h2>
+        <p class="riddle-copy">
+          "I make no muscle grow on my own.<br>
+          I add no strength by myself.<br>
+          Yet thousands trust me before they become stronger.<br><br>
+          What am I?"
+        </p>
+        <form id="riddleForm" class="answer-form" autocomplete="off">
+          <label class="sr-only" for="answerInput">Riddle answer</label>
+          <input id="answerInput" type="text" placeholder="Enter answer" required>
+          <button class="action-button" type="submit">Unlock</button>
+        </form>
+        <p id="hintText" class="hint-text" aria-live="polite"></p>
+      </article>
+    </section>
+
+    <section id="reward" class="screen reward-screen" aria-labelledby="rewardTitle">
+      <div class="reward-grid">
+        <div class="reward-copy">
+          <p class="kicker">🏆 Challenge Complete</p>
+          <h2 id="rewardTitle">Congratulations!</h2>
+          <p>You have earned</p>
+          <strong>🧪 One Tub of Creatine</strong>
+          <span>"Redeem your reward from Nandhan."</span>
+        </div>
+        <div class="reward-display" aria-label="Rotating creatine tub reward">
+          <div class="metal-card"></div>
+          <div class="creatine-tub">
+            <div class="tub-lid"></div>
+            <div class="tub-body">
+              <span>Creatine</span>
+              <small>Birthday PR Fuel</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul id="achievementList" class="achievements" aria-label="Unlocked achievements">
+        <li>🏆 Birthday Buff Activated</li>
+        <li>🏆 Strength +10</li>
+        <li>🏆 Discipline Level 100</li>
+        <li>🏆 Leg Day Survivor</li>
+        <li>🏆 Gym Bro Certified</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
